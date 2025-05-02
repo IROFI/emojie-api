@@ -1,30 +1,45 @@
-# Next.js API Endpoint
+# 🎯 Emoji Finder API
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+An API that helps you find a relevant emoji based on a sentence, in any language.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/irofis-projects/v0-next-js-api-endpoint)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/1HZqcDdNUUy)
+Powered by **GROQ** using the **LLaMA 3.1 8B Instant** model.
 
-## Overview
+## 🚀 Demo
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+👉 [Demo Site](https://emojiefinder.vercel.app)
 
-## Deployment
+## ✨ Features
 
-Your project is live at:
+- Emoji generation from multilingual text.
+- Secure authentication via API key.
+- Simple web interface to quickly test the API.
 
-**[https://vercel.com/irofis-projects/v0-next-js-api-endpoint](https://vercel.com/irofis-projects/v0-next-js-api-endpoint)**
+## 🛠️ Installation
 
-## Build your app
+1. **Clone the repository:**
 
-Continue building your app on:
+   ```bash
+   git clone <repo-url>
+   cd emojie-api
+   cp env.example .env
+   # Edit the environment variables in the .env file
+   npm install
+   npm run dev
+   ```
 
-**[https://v0.dev/chat/projects/1HZqcDdNUUy](https://v0.dev/chat/projects/1HZqcDdNUUy)**
+## 📦 Usage
 
-## How It Works
+### 1. From the web interface
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Access the interface at [http://localhost:3000](http://localhost:3000) to easily test the API.
+
+### 2. From an API request
+
+Make an HTTP POST call:
+
+```bash
+ curl -X POST "http://localhost:3000/api/emoji" \
+  -H "Content-Type: application/json" \
+  -H "X-API-KEY: YOUR_SECRET_API_KEY" \
+  -d '{"text": "Your text" }'
+```
