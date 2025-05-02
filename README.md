@@ -6,7 +6,7 @@ Powered by **GROQ** using the **LLaMA 3.1 8B Instant** model.
 
 ## 🚀 Demo
 
-👉 [Demo Site](https://emojiefinder.vercel.app)
+👉 [Demo Site](https://findemojie.vercel.app/)
 
 ## ✨ Features
 

@@ -93,7 +93,7 @@ export default function Home() {
                   Demo
                 </h3>
                 <a
-                  href="https://emojiefinder.vercel.app"
+                  href="https://findemojie.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary underline"
